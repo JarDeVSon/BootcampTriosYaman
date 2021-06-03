@@ -20,7 +20,7 @@ public class CursosPage {
         btnBusca.click();
     }
     public void validarTiposDeCursos(){
-        
+
     }
 
 
