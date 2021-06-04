@@ -10,8 +10,7 @@
     Para que eu possa acessar os cursos disponíveis
 
     Contexto:
-      Dado que estou no site da Trios de Capacitação
-      E clico no menu Login "Login"
+      Dado que estou no site da Trios de Capacitação "https://triosdecapacitacao.eadplataforma.com/login/"
 
     Cenário: Verificar o preenchimento do E-mail
       Quando verifico o preenchimento do E-mail "Email"
