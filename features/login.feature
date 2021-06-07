@@ -10,7 +10,7 @@
     Para que eu possa acessar os cursos disponíveis
 
     Contexto:
-      Dado que estou no site da Trios de Capacitação "https://triosdecapacitacao.eadplataforma.com/login/"
+      Dado que possuo uma conta no site da Trios de Capacitação "https://triosdecapacitacao.eadplataforma.com/login/"
 
     Cenário: Verificar o preenchimento do E-mail
       Quando verifico o preenchimento do E-mail "Email"
@@ -26,8 +26,8 @@
 
       @acessar @web @mobile @sprint @regressivo
     Cenário: Validar o Acesso a conta no site da Trios.
-      Quando preencho as informações com E-mail e Senha "E-mail", "Senha"
-      E valido o acesso "Entrar"
+      Quando preencho as informações com "E-mail" e "Senha"
+        E seleciona o "Entrar"
       Entao o sistema deve redirecionar para a página inicial.
 
     Cenário: Validar o redirecionamento de Esqueceu sua senha
