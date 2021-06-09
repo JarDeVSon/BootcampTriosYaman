@@ -1,9 +1,8 @@
-package Pages;
+package Pages.Cadastro;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class CadastroPage {
     static WebDriver driver;
@@ -28,8 +27,8 @@ public class CadastroPage {
         WebElement captcha = driver.findElement(By.cssSelector("input[maxlength='6']"));
         captcha.sendKeys("KNGI3L");
 
-        WebElement entrar = driver.findElement(By.cssSelector("#btn_cadastro"));
-        entrar.click();
+        WebElement criarConta = driver.findElement(By.cssSelector("#btn_cadastro"));
+        criarConta.click();
 
     }
 

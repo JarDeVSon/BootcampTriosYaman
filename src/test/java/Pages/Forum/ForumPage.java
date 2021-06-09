@@ -1,4 +1,4 @@
-package Pages;
+package Pages.Forum;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -9,6 +9,9 @@ public class ForumPage {
 
     public ForumPage(WebDriver driver){
         ForumPage.driver = driver;
+    }
+    public void elementoCursosXpath(){
+
     }
     public void verificarBuscaNoForum(){
         WebElement buscaForum = driver.findElement(By.cssSelector("#topic_forum"));

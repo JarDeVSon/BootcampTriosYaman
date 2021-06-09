@@ -1,4 +1,4 @@
-package Pages;
+package Pages.Cursos;
 
 public class CursosSaibaMaisPage {
 }

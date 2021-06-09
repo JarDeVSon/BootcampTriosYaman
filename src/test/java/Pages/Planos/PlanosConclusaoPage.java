@@ -1,4 +1,4 @@
-package Pages;
+package Pages.Planos;
 
 public class PlanosConclusaoPage {
 }
