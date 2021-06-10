@@ -5,19 +5,21 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class LoginPage {
+    static Object validarOAcessoAContaNoSiteDaTrios;
     static WebDriver driver;
 
-    public LoginPage(WebDriver driver){
+    public LoginPage(WebDriver driver, Object validarOAcessoAContaNoSiteDaTrios){
         LoginPage.driver = driver;
+        LoginPage.validarOAcessoAContaNoSiteDaTrios = validarOAcessoAContaNoSiteDaTrios;
     }
 
     public void verificarOPreenchimentoDoEmail(){
         WebElement email = driver.findElement(By.cssSelector("#email"));
-        email.sendKeys("Email");
+        email.sendKeys("jardounifanor@gmail.com");
     }
     public void verificarOPreenchimentoDaSenha(){
         WebElement senha = driver.findElement(By.cssSelector("#senha"));
-        senha.sendKeys("Senha");
+        senha.sendKeys("1996$jrd");
     }
     public void validarOLembreMeDaConta(){
         WebElement lembreMe = driver.findElement(By.cssSelector("input[name='remember']"));
@@ -25,9 +27,9 @@ public class LoginPage {
     }
     public void validarOAcessoAContaNoSiteDaTrios(){
         WebElement email = driver.findElement(By.cssSelector("#email"));
-        email.sendKeys("Email");
-        WebElement senha = driver.findElement(By.cssSelector("#senhha"));
-        senha.sendKeys("Senha");
+        email.sendKeys("jardounifanor@gmail.com");
+        WebElement senha = driver.findElement(By.cssSelector("#senha"));
+        senha.sendKeys("1996$jrd");
         WebElement entrar = driver.findElement(By.cssSelector("#btn_login"));
         entrar.click();
     }

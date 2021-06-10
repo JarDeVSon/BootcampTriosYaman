@@ -20,6 +20,8 @@ public class CursosPage {
     }
     public void validarTiposDeCursos(){
 
+        WebElement tiposCursos = driver.findElement(By.cssSelector(".fa-list-ul"));
+        tiposCursos.getText();
     }
 
 

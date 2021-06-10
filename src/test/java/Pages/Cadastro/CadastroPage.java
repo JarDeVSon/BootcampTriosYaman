@@ -5,11 +5,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class CadastroPage {
+
+    static Object preencherCadastro;
     static WebDriver driver;
 
 
-    public CadastroPage(WebDriver driver){
+    public CadastroPage(WebDriver driver, Object preencherCadastro){
         CadastroPage.driver = driver;
+        CadastroPage.preencherCadastro = preencherCadastro;
     }
     public void preencherCadastro(){
         WebElement nomeCompleto = driver.findElement(By.cssSelector("#nome"));
@@ -24,8 +27,8 @@ public class CadastroPage {
         WebElement senha = driver.findElement(By.cssSelector("#senha"));
         senha.sendKeys("pwd@123");
 
-        WebElement captcha = driver.findElement(By.cssSelector("input[maxlength='6']"));
-        captcha.sendKeys("KNGI3L");
+        WebElement captcha = driver.findElement(By.cssSelector("input[name='e-captcha']"));
+        captcha.sendKeys("SC9N05");
 
         WebElement criarConta = driver.findElement(By.cssSelector("#btn_cadastro"));
         criarConta.click();
