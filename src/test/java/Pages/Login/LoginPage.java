@@ -1,16 +1,15 @@
 package Pages.Login;
 
+import Aplicacao_WEB.Login;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class LoginPage {
-    static Object validarOAcessoAContaNoSiteDaTrios;
-    static WebDriver driver;
 
-    public LoginPage(WebDriver driver, Object validarOAcessoAContaNoSiteDaTrios){
+    static WebDriver driver;
+    public LoginPage(WebDriver driver){
         LoginPage.driver = driver;
-        LoginPage.validarOAcessoAContaNoSiteDaTrios = validarOAcessoAContaNoSiteDaTrios;
     }
 
     public void verificarOPreenchimentoDoEmail(){
@@ -34,10 +33,12 @@ public class LoginPage {
         entrar.click();
     }
     public void validarORedirecionamentoDeEsqueceuSuaSenha(){
+
         WebElement esqueceuSenha = driver.findElement(By.cssSelector("a[href='#lembrarsenha']"));
         esqueceuSenha.click();
+
         WebElement recuperarSenha = driver.findElement(By.cssSelector("#email-redefine-password"));
-        recuperarSenha.sendKeys("email@email.com");
+        recuperarSenha.sendKeys("sasasas@email.com");
         WebElement btnEnviar = driver.findElement(By.cssSelector("#btnRedefinePassword"));
         btnEnviar.click();
     }
@@ -45,9 +46,8 @@ public class LoginPage {
         WebElement seAutenticar = driver.findElement(By.cssSelector("a[href='#autenticacao']"));
         seAutenticar.click();
         WebElement recuperarSenha = driver.findElement(By.cssSelector("input[placeholder='Digite seu E-mail...']"));
-        recuperarSenha.sendKeys("email@email.com");
+        recuperarSenha.sendKeys("shuahsuahs@email.com");
         WebElement btnEnviar = driver.findElement(By.cssSelector("#btn_confirmacao"));
         btnEnviar.click();
     }
-
 }
